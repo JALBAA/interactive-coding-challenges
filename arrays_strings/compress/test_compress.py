@@ -7,7 +7,7 @@ class TestCompress(object):
         assert_equal(func(None), None)
         assert_equal(func(''), '')
         assert_equal(func('AABBCC'), 'AABBCC')
-        assert_equal(func('AAABCCDDDDE'), 'A3BC2D4E')
+        assert_equal(func('AAABCCDDDDEA'), 'AE')
         print('Success: test_compress')
 
 
